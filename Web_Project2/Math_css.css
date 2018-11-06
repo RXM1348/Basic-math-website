@@ -1,0 +1,154 @@
+ *{box-sizing: border-box}
+ 
+
+  
+ body{
+	 
+	background-image: url(Page_background.jpg);
+    background-repeat: no-repeat;
+	background-size: cover;
+	font-family: Andalus;
+	opacity:0.97;
+
+ }
+ 
+.style{
+	
+	
+	width:900px;
+	height: 100%;
+	opacity:default;
+	background-color:white;
+	opacity:default;
+
+}
+
+h1{
+	color: #54954E;
+}
+
+
+
+.btn {
+    background-color:white; 
+    border: 1;
+    color: solid-black;
+    padding: 9px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+	padding: 16px 32px;
+	margin: 4px 2px;
+	opacity: 1;
+}
+
+.btn:hover{
+	color: black;
+	-webkit-border-radius:10px ;
+	-moz-border-radius:10px ;
+	opacity: 0.4;
+	border-radius:10px;
+	}
+
+#Instruction{
+	
+	color:#54954E;
+}
+
+
+	p{
+		
+	color: #C1CA43;
+	text-align: center;
+	margin-left: 5px;
+	margin-right: 5px;
+	}
+	
+	
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+
+.mySlides {
+    display: none;
+}
+
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+
+#result{
+	
+	background-color:white;	
+	font-size: 16px;
+	color: black;
+	text-align:center;
+	
+}
+#question{
+ color:black;
+ font-size: 46px;
+}
+
+
+.Rpt{
+	
+	height: 800px;
+	width: 800px;
+	background-image: url(background.jpg);
+	text-align: center;
+	
+}
+
+#level{
+	
+	text-align: center;
+	font-size: 30px;
+}
+
+
+button{
+	background-color:white; 
+    border: 1;
+    color: solid-black;
+    padding: 9px 32px;
+    text-align: center;
+    display: inline-block;
+	padding: 16px 32px;
+	margin: 4px 2px;
+	opacity: 1;
+	
+}
+input[type=text]{
+  width: 400px;
+  padding: 10px;
+  margin: 5px 0 20px 0;
+  display: inline-block;
+  border: 1;
+  background:white;
+  }
+  
+  
+  
+  b{
+	  font-size: 20px;
+	  color:#C1CA43;
+  }

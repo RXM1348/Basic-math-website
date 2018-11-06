@@ -1,0 +1,102 @@
+<!doctype html>
+    <html>
+    
+        <head>
+            <title> Little Wiz's  </title>
+            <meta name = "Author" content = " Roxanne Meeks"/>
+            <meta name = "Keywords" content = "Child Learning, Math, Educational, Add, Subtract, Divide, Multiply" />
+            <meta name = charset = "UTF-8"/>
+            <link rel="stylesheet" type= "text/css" href="Index_css.css"/>
+            <script>
+
+            function CalAge()
+			{
+            
+				var dob=document.getElementById('dob').value;
+				
+				var birthdate = new Date(dob);
+				var currentdate = new Date();
+				
+				var age = (currentdate.getFullYear() - birthdate.getFullYear())
+				console.log(age);
+
+				var doc_age = document.getElementById('age').value = age;
+				
+				if (age==""|| age < 9 || age > 12)
+				{
+					alert("The Site is for Children Bettween 9 and 12!");
+				}else
+					{
+					  alert("Accepted");
+					}
+            }
+			
+				console.log(age);
+				console.log(doc_age);
+				
+				
+				
+			
+				function previewFile() {
+				  var preview = document.querySelector('img');
+				  var file    = document.querySelector('input[type=file]').files[0];
+				  var reader  = new FileReader();
+
+				  reader.onloadend = function () {
+					preview.src = reader.result;
+				  }
+
+				  if (file) {
+					reader.readAsDataURL(file);
+				  } else {
+					preview.src = "";
+				  }
+				}
+				
+			</script>
+        </head>
+        
+        <body>
+			<center>
+				<form action= "Math.html" name ="Registration">
+					<div class="container">
+										
+						<center><h2 id="REG"> Little Wiz's Registration Form</h2></center>
+											
+							<p>Please fill in this form to Access our site.</p> 
+							
+							<label> First Name </label><br/>
+							<input type= "text" name="fname" id="fname" size= "30" maxlength="20" placeholder="Enter First Name" pattern=".{3,}" title="Must Contain Atleast three Letters" required>
+
+							<label> Middle Name</label><br/>
+							<input type="text" name="mname" id="mname"  size= "30" maxlength= "20" placeholder="Enter Middle Name" required> 
+
+							<label> Last Name </label><br/>
+							<input type= "text" name="lname" id="lname" size= "30" maxlength="20" placeholder="Enter Last Name" pattern=".{3,}" title="Must Contain Atleast three Letters" required>
+
+							<label> Date of Birth </label><br/>
+							<input type= "date" name="dob" id="dob" size="30" maxlength="20" required onchange="CalAge()">
+
+							<label> Age </label><br/>
+							<input type= "text" id="age" name="age" required>
+							
+							<label> Gender </label><br/>
+							<input type="radio" id="fgender" name="Gender" value="F" /> &nbsp;Female
+							<input type="radio" id="mgender" name="Gender" value="M" />&nbsp; Male
+
+							<hr>
+							
+							<input type= "submit" value="Register" class="register"/>
+							<input type= "reset" value="Cancel" class="cancel"/>
+							
+							<br/>
+							<br/>
+							<input type="file" onchange="previewFile()" title="Image Of Self" required /><br></center>							
+						
+					</div>
+					
+				</form>
+		</center>
+        </body>
+        
+    </html>
